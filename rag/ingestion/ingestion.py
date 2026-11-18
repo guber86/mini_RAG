@@ -5,7 +5,8 @@ from rag.ingestion.embedder import get_vectors
 from rag.ingestion.repository import save
 
 
-def main():
+
+def create_index():
 
     content = get_content()
     cleaned_content = clean_content(content)
@@ -19,7 +20,5 @@ def main():
         print(f"Vectors count: {len(vectors)}")
 
 
-
-
 if __name__ == "__main__":
-    main()
+    create_index()
