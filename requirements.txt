@@ -2,3 +2,5 @@ sentence-transformers
 numpy
 scikit-learn
 google-genai
+python-dotenv
+httpx2
