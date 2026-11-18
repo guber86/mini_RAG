@@ -1,3 +1,4 @@
+# Заметки: notes/python_learning.md — «Сборка контекста».
 def build_context(chunks):
     lines = []
 
@@ -5,14 +6,6 @@ def build_context(chunks):
         lines.append(f"[{number}] {text}")
 
     return "\n".join(lines)
-
-    # or
-    # result = ''
-    # for index in range(len(chunks)):
-    #     result += f"[{index + 1}] {chunks[index][0]}\n"
-    #
-    # return result
-    # the first variant works better on a huge amount of chunks, more readable because we down use indexes directly
 
 def build_prompt(query, chunks):
     context = build_context(chunks)

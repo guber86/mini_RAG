@@ -7,8 +7,6 @@ from httpx2 import TimeoutException
 
 load_dotenv()
 query = input("Ваш вопрос: ")
-# query = "Можно ли оплатить при получении?"
-
 
 try:
     response = answer_question(query, top_k=2, mode="gemini")
